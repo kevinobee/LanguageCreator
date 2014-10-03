@@ -27,11 +27,5 @@ _ReSharper*/
 TestResults
 
 #Project specific ignores
-libs/*.dll
-libs/*.pdb
 /packages
-
-# Build ignores
-/msbuild.log
-/artifacts
-*.sitecore
+keys*.xml

@@ -1,9 +1,11 @@
+using System.Globalization;
+using System.Xml.Linq;
 using CommandLine;
 using CommandLine.Text;
 
-namespace LanguageImporter
+namespace LanguageCreator.Model
 {
-    internal class Options
+    public class Options
     {
         [Option('f', "file", Required = true, HelpText = "Path to keys.xml file to be processed")]
         public string File { get; set; }
@@ -23,5 +25,13 @@ namespace LanguageImporter
             return HelpText.AutoBuild(this,
                 current => HelpText.DefaultParsingErrorsHandler(this, current));
         }
+    }
+
+    public class LanguageCreatorRequest
+    {
+        public XDocument Document { get; set; }
+        public CultureInfo Culture { get; set; }
+        public string Marker { get; set; }
+        public string SearchTerm { get; set; }
     }
 }

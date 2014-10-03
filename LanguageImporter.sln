@@ -3,7 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageImporter", "LanguageImporter\LanguageImporter.csproj", "{E229103C-9136-4FC8-A6A8-25D19B6FEFCF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6B3B7736-222E-4E27-BA0D-F9DFB569808E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{15D9937F-6797-47C1-BCA5-0AFA3092D785}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7400C366-F0DB-4948-BEAC-1716B5325B6D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageCreator", "src\LanguageCreator\LanguageCreator.csproj", "{41CEEF9D-A5A2-453C-96AF-5C230822151D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageCreator.Test", "test\LanguageCreator.Test\LanguageCreator.Test.csproj", "{1B2A4097-EA67-4DB6-B5E1-24BDE7189B9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +24,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E229103C-9136-4FC8-A6A8-25D19B6FEFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E229103C-9136-4FC8-A6A8-25D19B6FEFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E229103C-9136-4FC8-A6A8-25D19B6FEFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E229103C-9136-4FC8-A6A8-25D19B6FEFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41CEEF9D-A5A2-453C-96AF-5C230822151D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41CEEF9D-A5A2-453C-96AF-5C230822151D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41CEEF9D-A5A2-453C-96AF-5C230822151D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41CEEF9D-A5A2-453C-96AF-5C230822151D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2A4097-EA67-4DB6-B5E1-24BDE7189B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2A4097-EA67-4DB6-B5E1-24BDE7189B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2A4097-EA67-4DB6-B5E1-24BDE7189B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2A4097-EA67-4DB6-B5E1-24BDE7189B9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41CEEF9D-A5A2-453C-96AF-5C230822151D} = {6B3B7736-222E-4E27-BA0D-F9DFB569808E}
+		{1B2A4097-EA67-4DB6-B5E1-24BDE7189B9A} = {15D9937F-6797-47C1-BCA5-0AFA3092D785}
 	EndGlobalSection
 EndGlobal
